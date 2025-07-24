@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "tailwindcss";
 
 /* 필요하다면 여기에 custom 스타일 추가 */
 
@@ -18,7 +19,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background:hsl(0, 0.00%, 3.90%);
     --foreground: #ededed;
   }
 }
