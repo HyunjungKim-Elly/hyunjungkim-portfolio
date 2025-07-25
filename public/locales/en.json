@@ -1,0 +1,12 @@
+{
+    "about_title": "About",
+    "about_description": "I am a frontend developer who has been developing web services with React and Next.js, considering user experience, for 3 years at a startup. I have experience in designing and implementing various services such as e-commerce, event, and community platforms, and have also developed backend modules using Nest.js and GraphQL. I have also participated in various projects as a backend developer, from API design to external system integration and server migration, and have experience in increasing monthly active users (MAU) by more than 10 times by independently planning and implementing event features.",
+    "about_experience": "I have been developing web services with React and Next.js, considering user experience, for 3 years at a startup. I have experience in designing and implementing various services such as e-commerce, event, and community platforms, and have also developed backend modules using Nest.js and GraphQL.",
+    "about_projects": "I have experience in designing and implementing various services such as e-commerce, event, and community platforms, and have also developed backend modules using Nest.js and GraphQL.",
+    "about_skills": "I have experience in designing and implementing various services such as e-commerce, event, and community platforms, and have also developed backend modules using Nest.js and GraphQL.",
+    "experience_title": "Experience",
+    "experience_description": "I have been developing web services with React and Next.js, considering user experience, for 3 years at a startup. I have experience in designing and implementing various services such as e-commerce, event, and community platforms, and have also developed backend modules using Nest.js and GraphQL.",
+    "projects_title": "Projects",
+    "projects_description": "I have experience in designing and implementing various services such as e-commerce, event, and community platforms, and have also developed backend modules using Nest.js and GraphQL.",
+    "sidebar_desc": "I specialize in building user-friendly frontends with React, and have practical experience with backend APIs using Node.js & NestJS."
+}

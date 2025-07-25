@@ -27,6 +27,10 @@ const config = {
                 ...defaultTheme.spacing,
                 ...generatePixelSpacing(),
             },
+            backgroundImage: {
+                'gradient-radial':
+                    'radial-gradient(circle at center, #0f172a 0%, #020617 100%)',
+            },
         },
     },
     plugins: [],

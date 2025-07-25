@@ -1,11 +1,14 @@
-import AboutSection from "@/components/AboutSection";
+'use client'
+
+import AboutSection from "@/components/About";
 import { ExperienceSection } from "@/components/Experience";
-import HeroSection from "@/components/HeroSection";
-import Image from "next/image";
+import { StarryBackground } from "@/components/StarryBackground";
+
 
 export default function Home() {
   return (
-    <div className="font-sans items-center justify-items-center min-h-screen ">
+    <div className="font-sans items-center justify-items-center min-h-screen">
+      <StarryBackground />
       <main className="flex flex-col row-start-2 items-center sm:items-start">
         <AboutSection />
         <ExperienceSection />
