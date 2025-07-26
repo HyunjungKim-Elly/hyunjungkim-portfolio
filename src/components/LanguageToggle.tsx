@@ -14,7 +14,6 @@ export default function LanguageToggle() {
     const [currentLocale, setCurrentLocale] = useState<'en' | 'ko' | undefined>()
 
 
-
     useEffect(() => {
         if (currentLocale) {
             i18n.changeLanguage(currentLocale)
@@ -30,16 +29,18 @@ export default function LanguageToggle() {
         }
     }, [pathname])
 
+
     useEffect(() => {
         if (i18n.language === 'en') {
             setNextLocale('ko')
-        } else {
+        } else if (i18n.language === 'ko') {
             setNextLocale('en')
         }
     }, [i18n.language])
 
     const handleClick = () => {
         i18n.changeLanguage(nextLocale)
+        setCurrentLocale(nextLocale)
     }
 
     return (
