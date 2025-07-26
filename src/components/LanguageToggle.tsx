@@ -22,8 +22,6 @@ export default function LanguageToggle() {
 
     const handleClick = () => {
         const newPath = pathname.includes('ko') ? '/en' : '/ko'
-        console.log('newPath', newPath)
-        console.log('pathname', pathname)
 
         i18n.changeLanguage(nextLocale)
         router.push(newPath)

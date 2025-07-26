@@ -2,12 +2,8 @@
 
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
+import { Project } from './Projects'
 
-interface Project {
-    title: string
-    images: string[]
-    description: string
-}
 
 interface ProjectModalProps {
     isOpen: boolean

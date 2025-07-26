@@ -24,25 +24,18 @@ export function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }))
 }
 
-export default function RootLayout({
+export default async function CommonLayout({
   children,
   params,
 }: {
   children: React.ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const { locale } = params
-
-  console.log('RootLayout', locale)
+  const { locale } = await params
 
   return (
-    <html lang={locale}>
-      <body
-        suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ClientLayout locale={locale}>{children}</ClientLayout>
-      </body>
-    </html>
+    <>
+      <ClientLayout locale={locale}>{children}</ClientLayout>
+    </>
   )
 }

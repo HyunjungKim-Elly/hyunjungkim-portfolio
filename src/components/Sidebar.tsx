@@ -3,19 +3,19 @@
 import { useHash } from "@/hooks/useHarsh";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import Image from "next/image";
 
 export const Sidebar = () => {
-    const { t } = useTranslation()
+    const { t, ready } = useTranslation()
+
     const hash = useHash();
 
-    console.log(hash);
-    if (!t) return null;
     return (
         <aside className="pt-18 w-150 h-screen fixed left-0 top-0">
             <div className="flex flex-col gap-4 h-full pl-10">
                 <div className="flex items-center gap-4 mb-4">
                     <div className="text-[3.2rem] font-extrabold">Hyunjung Kim</div>
-                    {/* <Image src="/cat.png" alt="profile" width={38} height={38} /> */}
+                    {/* <Image src="/cat.png" alt="profile" width={38} height={38} className="bg-white rounded-full" /> */}
                 </div>
                 <h2 className="text-sm font-bold text-gray-200">Web Developer</h2>
                 <p className="text-sm text-gray-200 leading-snug mb-8">
