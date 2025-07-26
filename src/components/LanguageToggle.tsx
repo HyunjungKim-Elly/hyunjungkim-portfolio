@@ -10,7 +10,25 @@ export default function LanguageToggle() {
     const { i18n, t } = useTranslation()
 
     // 클라이언트에서만 nextLocale을 계산
-    const [nextLocale, setNextLocale] = useState<'en' | 'ko'>('en')
+    const [nextLocale, setNextLocale] = useState<'en' | 'ko' | undefined>()
+    const [currentLocale, setCurrentLocale] = useState<'en' | 'ko' | undefined>()
+
+
+
+    useEffect(() => {
+        if (currentLocale) {
+            i18n.changeLanguage(currentLocale)
+            router.replace(`/${currentLocale}`)
+        }
+    }, [currentLocale])
+
+    useEffect(() => {
+        if (pathname.split('/')[1] === 'en' || pathname.split('/')[1] === 'ko') {
+            setCurrentLocale(pathname.split('/')[1] as 'en' | 'ko')
+        } else {
+            setCurrentLocale(undefined)
+        }
+    }, [pathname])
 
     useEffect(() => {
         if (i18n.language === 'en') {
@@ -21,10 +39,7 @@ export default function LanguageToggle() {
     }, [i18n.language])
 
     const handleClick = () => {
-        const newPath = pathname.includes('ko') ? '/en' : '/ko'
-
         i18n.changeLanguage(nextLocale)
-        router.push(newPath)
     }
 
     return (
@@ -32,7 +47,7 @@ export default function LanguageToggle() {
             onClick={handleClick}
             className="text-sm font-medium underline text-gray-400 hover:text-white transition-colors"
         >
-            {t('switchTo')} {nextLocale.toUpperCase()}
+            {t('switchTo')} {nextLocale?.toUpperCase()}
         </button>
     )
 }

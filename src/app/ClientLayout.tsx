@@ -1,11 +1,10 @@
 'use client'
 
-import I18Provider from '@/components/I18nProvider'
 import { Header } from '@/components/Header'
-import { Sidebar } from '@/components/Sidebar'
+import I18Provider from '@/components/I18nProvider'
 import { MouseEffect } from '@/components/MouseEffect'
+import { Sidebar } from '@/components/Sidebar'
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
 
 export default function ClientLayout({
     children,
@@ -16,11 +15,12 @@ export default function ClientLayout({
 }) {
     const [isClient, setIsClient] = useState(false)
 
+
     useEffect(() => {
         setIsClient(true)
     }, [])
 
-    if (!isClient) return null
+    if (!isClient) return <></>
 
     return (
         <I18Provider locale={locale}>
