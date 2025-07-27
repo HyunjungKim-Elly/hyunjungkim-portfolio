@@ -66,7 +66,7 @@ const projects: Project[] = [
             year: '2025.01 - 2025.06',
             description:
                 'projects_description_3',
-            techStack: ['React', 'Zustand', 'Tailwind CSS'],
+            techStack: ['Vue2', 'React', 'Zustand', 'Tailwind CSS'],
             contribution: 'projectitem_contribution_3',
             image: '/images/projects/enuma-lms.png',
             images: ['/images/enumaschool_lms.png'],
@@ -82,7 +82,7 @@ const projects: Project[] = [
             year: '2023.05 - 2023.12',
             description:
                 'projects_description_4',
-            techStack: ['Vue 2', 'Vuex', 'SCSS', 'JavaScript'],
+            techStack: ['React', 'Next.js', 'Zustand', 'Tailwind CSS', 'SWR', 'Node.js', 'Nest.js', 'TypeORM', 'MongoDB'],
             contribution: 'projectitem_contribution_4',
             image: '/images/projects/mongnyang-market.png',
             images: ['/images/market_main.png', '/images/market_add.png', '/images/market_cart.png', '/images/market_address.png'],
