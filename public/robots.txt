@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hyunjungkim-portfolio.vercel.app
+
+# Sitemaps
+Sitemap: https://hyunjungkim-portfolio.vercel.app/sitemap.xml
