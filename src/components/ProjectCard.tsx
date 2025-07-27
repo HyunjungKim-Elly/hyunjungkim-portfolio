@@ -22,7 +22,7 @@ export const ProjectCard = ({
             className="w-full flex flex-row items-center gap-5 cursor-pointer hover:opacity-80 transition-all sm:flex-col sm:justify-center"
             onClick={onClick}
         >
-            <div className="relative min-w-60 min-h-30 rounded-md overflow-hidden border border-gray-600">
+            <div className="relative min-w-30 min-h-30 rounded-md overflow-hidden border border-gray-600">
                 <Image src={image} alt={t(title)} sizes="300px" fill className="object-cover" />
             </div>
             <div className="group flex flex-col w-full">

@@ -1,15 +1,14 @@
 'use client'
 
-import { useHash } from "@/hooks/useHarsh";
+import { useHash } from "@/hooks/useHash";
+import { useWindowSize } from "@/hooks/useWindowSize";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import Image from "next/image";
 import { SocialSidebar } from "./SocialBar";
-import { useWindowSize } from "@/hooks/useWindowSize";
 
 export const Sidebar = () => {
-    const { t, ready } = useTranslation()
-    const { isSm, isMd, isLg } = useWindowSize()
+    const { t } = useTranslation()
+    const { isLg } = useWindowSize()
 
     const hash = useHash();
 
@@ -42,7 +41,7 @@ export const Sidebar = () => {
                                         className={`h-[0.15rem] group-hover:w-12 transition-all duration-300 rounded-full group-hover:bg-white ${`#${item.id}` === hash ? 'bg-white w-12' : 'bg-gray-600 w-4'}`}
                                     />
                                     {/* 메뉴 텍스트 */}
-                                    <span className={`text-gray-500 group-hover:text-white text-sm ${`#${item.id}` === hash ? 'text-white' : 'text-gray-500'}`}>{item.label}</span>
+                                    <span className={`group-hover:text-white text-sm ${`#${item.id}` === hash ? 'text-white' : 'text-gray-500'}`}>{item.label}</span>
                                 </Link>
                             </li>
                         ))}

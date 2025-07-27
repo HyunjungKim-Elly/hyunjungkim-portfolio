@@ -9,7 +9,7 @@ export const ExperienceSection = () => {
     const technobellyTechs = ['React', 'Swift', 'HTML', 'JS'];
 
     return (
-        <section className="px-6 max-w-4xl mt-20" id="experience">
+        <section className="px-6 mt-20 flex flex-col justify-start w-full" id="experience">
             <h2 className="text-3xl font-bold mb-6">Experience</h2>
 
             <div className="mb-12">

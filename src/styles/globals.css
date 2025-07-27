@@ -22,10 +22,6 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   /* @apply bg-gradient-to-b from-[#ffffff] to-[#303030]; */
   /* background: var(--background); */

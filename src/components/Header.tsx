@@ -1,11 +1,13 @@
 'use client'
 
-import { useHash } from "@/hooks/useHarsh";
+import { useHash } from "@/hooks/useHash";
 import LanguageToggle from "./LanguageToggle";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import Link from "next/link";
 
 export const Header = () => {
+    const hash = useHash();
+
     const { isSm, isMd } = useWindowSize()
 
     const menuItems = [
@@ -14,7 +16,6 @@ export const Header = () => {
         { id: 'projects', label: 'PROJECTS' },
     ]
 
-    const hash = useHash();
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 flex justify-end items-center px-6 py-4 w-full bg-black/50 lg:bg-transparent">
@@ -27,7 +28,7 @@ export const Header = () => {
                                 className="group flex items-center gap-3 transition-all cursor-pointer hover:text-white"
                             >
                                 {/* 메뉴 텍스트 */}
-                                <span className={`text-gray-500 group-hover:text-white text-sm ${`#${item.id}` === hash ? 'text-white' : 'text-gray-500'}`}>{item.label}</span>
+                                <span className={`group-hover:text-white text-sm ${`#${item.id}` === hash ? 'text-white' : 'text-gray-500'}`}>{item.label}</span>
                             </Link>
                         </li>
                     ))}
