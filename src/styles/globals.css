@@ -1,5 +1,6 @@
-@import "tailwindcss";
+@tailwind utilities;
 
+@import "tailwindcss";
 /* 필요하다면 여기에 custom 스타일 추가 */
 
 :root {

@@ -1,4 +1,3 @@
-import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config = {
@@ -7,11 +6,12 @@ const config = {
         './pages/**/*.{ts,tsx}',
         './components/**/*.{ts,tsx}',
         './src/**/*.{ts,tsx}',
+        './**/*.{ts,tsx}',
     ],
     theme: {
         screens: {
-            'sm': { max: '767px' },
-            'md': { min: '768px', max: '1023px' },
+            'sm': { min: '1px', max: '768px' },
+            'md': { min: '768px', max: '1024px' },
             'lg': { min: '1024px' },
         },
         extend: {
@@ -25,6 +25,6 @@ const config = {
         },
     },
     plugins: [],
-} as Config
+};
 
-export default config
+export default config;
