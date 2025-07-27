@@ -1,10 +1,15 @@
-import { redirect } from 'next/navigation'
-import { headers } from 'next/headers'
+'use client'
+import { useEffect } from 'react'
+import { redirect, usePathname } from 'next/navigation'
 
-export default async function RedirectPage() {
-    const headersList = await headers()
-    const acceptLang = headersList.get('accept-language')
-    const defaultLocale = acceptLang?.startsWith('ko') ? 'ko' : 'en'
+export default function RedirectPage() {
+    const pathname = usePathname()
 
-    redirect(`/${defaultLocale}`)
+    useEffect(() => {
+        if (pathname === '/') {
+            redirect(`/ko`)
+        } else {
+            redirect(`/en`)
+        }
+    }, [pathname])
 }
