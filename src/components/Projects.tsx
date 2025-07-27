@@ -126,7 +126,7 @@ export const ProjectSection = () => {
     const [selectedProject, setSelectedProject] = useState<Project['projectItem'] | null>(null)
 
     return (
-        <section id="projects" className="my-20 space-y-6 px-6 w-full">
+        <section id="projects" className="my-10 space-y-6 px-6 w-full">
             <h2 className="text-3xl font-bold">Projects</h2>
             {projects.map((project, idx) => (
                 <ProjectCard year={project.year} image={project.image} description={project.description} title={project.title} key={idx} onClick={() => setSelectedProject(project.projectItem)} />
