@@ -4,6 +4,7 @@ import { Dialog, DialogTitle, Transition, TransitionChild, DialogPanel } from '@
 import Image from 'next/image'
 import { Fragment, useState } from 'react'
 import { ProjectItem } from './Projects'
+import { useTranslation } from 'react-i18next'
 
 interface ProjectModalProps {
     isOpen: boolean
@@ -12,6 +13,8 @@ interface ProjectModalProps {
 }
 
 export const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
+    const { t } = useTranslation();
+
     const [activeImage, setActiveImage] = useState(0)
 
     return (
@@ -84,7 +87,7 @@ export const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) =>
                                 {/* Right: Details */}
                                 <div className='text-gray-800'>
                                     <DialogTitle className="text-2xl font-semibold mb-2">
-                                        {project.title}
+                                        {t(project.title)}
                                     </DialogTitle>
                                     <div className="text-sm text-muted-foreground font-semibold text-sky-800 mb-4">
                                         {project.year}
@@ -102,7 +105,7 @@ export const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) =>
                                     </div>
 
                                     <p className="text-sm leading-relaxed mb-4 whitespace-pre-line">
-                                        {project.description}
+                                        {t(project.description)}
                                     </p>
                                     {/* 
                                     {project.link && (
