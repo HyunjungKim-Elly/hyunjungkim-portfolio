@@ -44,11 +44,15 @@ export default function LanguageToggle() {
     }
 
     return (
-        <button
-            onClick={handleClick}
-            className="text-sm font-medium underline text-gray-400 hover:text-white transition-colors"
-        >
-            {t('switchTo')} {nextLocale?.toUpperCase()}
-        </button>
+        <div className="flex items-center gap-2">
+            <span className="text-sm font-bold text-gray-300">{currentLocale?.toUpperCase()}</span>
+            <span>|</span>
+            <button
+                onClick={handleClick}
+                className="cursor-pointer text-sm font-bold underline text-gray-400 hover:text-white transition-colors"
+            >
+                {`${nextLocale?.toUpperCase()}`}
+            </button>
+        </div>
     )
 }

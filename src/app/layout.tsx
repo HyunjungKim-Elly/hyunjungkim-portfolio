@@ -1,4 +1,6 @@
 import { Geist, Geist_Mono } from 'next/font/google'
+import '@/styles/globals.css'
+
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -15,6 +17,7 @@ export default async function RootLayout({ children, params }: {
 }) {
 
   const { locale } = await params
+
 
   return (
     <html lang={locale}>

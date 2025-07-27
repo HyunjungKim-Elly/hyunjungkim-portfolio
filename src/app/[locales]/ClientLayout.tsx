@@ -24,7 +24,7 @@ export default function ClientLayout({
 
     return (
         <I18Provider locale={locale}>
-            <div className="ml-150">
+            <div className="lg:ml-150">
                 <Header />
                 <Sidebar />
                 {children}

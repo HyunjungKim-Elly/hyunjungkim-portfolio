@@ -29,9 +29,9 @@ export const About = () => {
     }
 
     return (
-        <section className="px-6 max-w-4xl mx-auto pt-20" id="about">
+        <section className="px-6 mx-auto pt-20" id="about">
             <h2 className="text-3xl font-bold mb-6">About</h2>
-            <section className="text-sm leading-relaxed text-gray-300 space-y-4 mb-8">
+            <section className="text-sm leading-relaxed text-gray-300 mb-8">
                 <p>
                     {t('about_description')}
                     {/* 저는 <span className="font-bold hover:text-blue-400 transition-colors">React와 Next.js를 기반으로 사용자 경험을 고민하며 웹 서비스를 개발해온 프론트엔드 개발자</span>입니다.

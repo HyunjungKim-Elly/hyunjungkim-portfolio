@@ -2,7 +2,7 @@ import Image from "next/image";
 
 interface ProjectCardProps {
     title: string;
-    year: string;
+    year: number;
     image: string;
     description: string;
     onClick?: () => void;

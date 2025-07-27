@@ -3,18 +3,6 @@ import type { Metadata } from 'next'
 import ClientLayout from './ClientLayout'
 import { i18n } from '../../../next-i18next.config'
 
-import '@/styles/globals.css'
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
 export const metadata: Metadata = {
   title: 'Hyunjung Kim',
   description: "Hyunjung Kim's Portfolio",

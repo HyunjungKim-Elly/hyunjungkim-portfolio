@@ -1,14 +1,6 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
 
-const generatePixelSpacing = () => {
-    const spacing: Record<string, string> = {}
-    for (let i = 1; i <= 1000; i++) {
-        spacing[i.toString()] = `${i}px`
-    }
-    return spacing
-}
-
 const config = {
     content: [
         './app/**/*.{ts,tsx}',
@@ -16,16 +8,15 @@ const config = {
         './components/**/*.{ts,tsx}',
         './src/**/*.{ts,tsx}',
     ],
-    safelist: [
-        {
-            pattern: /^(w|h|ml|mr|mt|mb|p|pt|pb|px|py|m|gap)-\d+$/,
-        },
-    ],
     theme: {
+        screens: {
+            'sm': { max: '767px' },
+            'md': { min: '768px', max: '1023px' },
+            'lg': { min: '1024px' },
+        },
         extend: {
             spacing: {
                 ...defaultTheme.spacing,
-                ...generatePixelSpacing(),
             },
             backgroundImage: {
                 'gradient-radial':
