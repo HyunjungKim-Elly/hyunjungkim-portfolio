@@ -35,7 +35,7 @@
     "projects_title_4": "MN Market",
     "projects_description_4": "Developed a new e-commerce shopping mall, develop UI, UX, and algorithm for product options",
     "projects_title_5": "MN Community",
-    "projects_description_5": "Developed a new web community, developed UI, UX, and algorithm for product options",
+    "projects_description_5": "Migrated the existing Node/Express backend to Nest.js, restructured the backend, added external API integration and authentication/security logic to ensure stability",
     "projects_title_6": "HR Management System Development",
     "projects_description_6": "Develop HR management system",
     "projectitem_title_1": "Enuma School Landing Page Refactoring",

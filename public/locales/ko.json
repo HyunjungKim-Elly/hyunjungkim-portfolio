@@ -35,7 +35,7 @@
     "projects_title_4": "멍냥마켓",
     "projects_description_4": "새로운 이커머스 쇼핑몰 개발, 상품 옵션 UI, UX, 알고리즘 개발",
     "projects_title_5": "멍냥보감 웹 커뮤니티",
-    "projects_description_5": "새로운 웹 커뮤니티 개발, 상품 옵션 UI, UX, 알고리즘 개발",
+    "projects_description_5": "기존 웹을 커뮤니티화 하면서 서버를 Nest.js로 마이그레이션하고 외부 API 연동 및 인증/보안 로직을 추가해 안정성을 확보했습니다.",
     "projects_title_6": "HR 관리시스템 개발",
     "projects_description_6": "인사관리시스템 개발",
     "projectitem_title_1": "에누마스쿨 소개 사이트 리팩토링",
