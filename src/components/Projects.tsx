@@ -82,7 +82,7 @@ const projects: Project[] = [
             year: '2023.05 - 2023.12',
             description:
                 'projects_description_4',
-            techStack: ['React', 'Next.js', 'Zustand', 'Tailwind CSS', 'SWR', 'Node.js', 'Nest.js', 'TypeORM', 'MongoDB'],
+            techStack: ['React', 'Next.js', 'Zustand', 'Tailwind CSS', 'SWR', 'Node.js', 'Nest.js', 'TypeORM'],
             contribution: 'projectitem_contribution_4',
             image: '/images/projects/mongnyang-market.png',
             images: ['/images/market_main.png', '/images/market_add.png', '/images/market_cart.png', '/images/market_address.png'],
@@ -98,7 +98,7 @@ const projects: Project[] = [
             year: '2023.05 - 2023.09',
             description:
                 'projects_description_5',
-            techStack: ['Nest.js', 'TypeORM', 'Node.js'],
+            techStack: ['React', 'Next.js', 'Zustand', 'Tailwind CSS', 'SWR', 'Node.js', 'Nest.js', 'TypeORM',],
             contribution: 'projectitem_contribution_5',
             image: '/images/projects/mongnyang-community.png',
             images: ['/images/community_main.png', '/images/community_articles.png', '/images/community_food.png'],
@@ -114,7 +114,7 @@ const projects: Project[] = [
             year: '2020.01 - 2020.01',
             description:
                 'projects_description_6',
-            techStack: ['React', 'Node.js', 'Express', 'MongoDB'],
+            techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB'],
             contribution: 'projectitem_contribution_6',
             image: '/images/projects/hr-management.png',
             images: ['/images/hr_register.png', '/images/hr_add.png', '/images/hr_department.png'],
