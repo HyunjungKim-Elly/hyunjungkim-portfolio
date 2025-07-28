@@ -4,8 +4,10 @@ import { useHash } from "@/hooks/useHash";
 import LanguageToggle from "./LanguageToggle";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import Link from "next/link";
+import { useScrollHashUpdater } from "@/hooks/useScrollHashUpdater";
 
 export const Header = () => {
+    useScrollHashUpdater()
     const hash = useHash();
 
     const { isSm, isMd } = useWindowSize()

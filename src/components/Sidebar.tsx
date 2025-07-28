@@ -5,12 +5,13 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { SocialSidebar } from "./SocialBar";
+import { useScrollHashUpdater } from "@/hooks/useScrollHashUpdater";
 
 export const Sidebar = () => {
     const { t } = useTranslation()
     const { isLg } = useWindowSize()
-
     const hash = useHash();
+    useScrollHashUpdater()
 
     const menuItems = [
         { id: 'about', label: 'ABOUT' },
