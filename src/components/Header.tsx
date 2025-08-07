@@ -19,7 +19,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex justify-end items-center px-6 py-4 w-full bg-black/50 lg:bg-transparent">
+    <header className="fixed top-0 left-0 right-0 z-50 flex justify-end items-center px-6 py-4 w-full bg-black/80 lg:bg-transparent">
       {(isSm || isMd) && (
         <ul className="flex gap-6 text-gray-200 text-lg font-semibold px-6 w-full">
           {menuItems.map(item => (
