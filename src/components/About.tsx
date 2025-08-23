@@ -56,7 +56,7 @@ export const About = () => {
         </p>
 
         <p>
-          {t("about_skills")}
+          {t("about_projects")}
           {/* <span className="font-bold hover:text-blue-400 transition-colors">API 설계부터 외부 시스템 연동, 서버 마이그레이션</span>까지 다양한 영역을 경험했으며,
                     이벤트 기능을 단독으로 기획하고 구현해 월간 사용자 수
                     (<span className="font-bold hover:text-blue-400 transition-colors">(MAU)를 10배 이상</span>) 끌어올린 경험도 있습니다. */}
